@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmer List</title>
+</head>
+<body>
+    <h1>Programmer List</h1>
+    <ul>
+            <li><a href="{% url 'programmer_detail' programmer.pk %}">{{ programmer }}</a></li>
+    </ul>
+    <a href="{% url 'add_programmer' %}">Add New Programmer</a>
+</body>
+</html>
+
