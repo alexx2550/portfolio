@@ -1,0 +1,33 @@
+<!-- developers/templates/developers/add_developer.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Developer</title>
+</head>
+<body>
+    <h1>Add Developer</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+        
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" required><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br>
+        
+        <label for="language">Language:</label>
+        <input type="text" name="language" required><br>
+        
+        <label for="framework">Framework:</label>
+        <input type="text" name="framework" required><br>
+        
+        <label for="experience">Experience (years):</label>
+        <input type="number" name="experience" required><br>
+        
+        <button type="submit">Add Developer</button>
+    </form>
+    <a href="{% url 'developers:developer_list' %}">Back to Developer List</a>
+</body>
+</html>

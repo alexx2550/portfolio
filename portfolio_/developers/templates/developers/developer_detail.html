@@ -1,0 +1,18 @@
+<!-- developers/templates/developers/developer_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer Detail</title>
+</head>
+<body>
+    <h1>Developer Detail</h1>
+    <p>Name: {{ programmer.name }}</p>
+    <p>Surname: {{ programmer.surname }}</p>
+    <p>Age: {{ programmer.age }}</p>
+    <p>Language: {{ programmer.language }}</p>
+    <p>Framework: {{ programmer.framework }}</p>
+    <p>Experience: {{ programmer.experience }} years</p>
+    <a href="{% url 'developers:developer_list' %}">Back to Developer List</a>
+</body>
+</html>
+

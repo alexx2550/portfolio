@@ -1,0 +1,17 @@
+<!-- developers/templates/developers/developer_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer List</title>
+</head>
+<body>
+    <h1>Developer List</h1>
+    <ul>
+        {% for programmer in programmers %}
+            <li><a href="{% url 'developers:developer_detail' programmer.pk %}">{{ programmer.name }} {{ programmer.surname }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'developers:developer_detail' 0 %}">Add New Developer</a>
+</body>
+</html>
+
