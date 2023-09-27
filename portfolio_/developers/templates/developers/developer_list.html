@@ -11,7 +11,7 @@
             <li><a href="{% url 'developers:developer_detail' programmer.pk %}">{{ programmer.name }} {{ programmer.surname }}</a></li>
         {% endfor %}
     </ul>
-    <a href="{% url 'developers:developer_detail' 0 %}">Add New Developer</a>
+    <a href="{% url 'developers:add_developer' %}">Add New Developer</a>
 </body>
 </html>
 
